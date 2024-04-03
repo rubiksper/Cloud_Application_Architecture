@@ -1,0 +1,216 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+  }
+  
+  .section_1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: backgroundAnimation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* Utilise une seule image d'arrière-plan */
+    background-image: url('../picture/view.png');
+  }
+  
+  
+  .section_3 {
+    z-index: 1; /* Assure que le contenu est placé au-dessus de l'animation de fond */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 600px; /* Ajuste la largeur maximale */
+    max-height: 500px; /* Ajuste la hauteur maximale */
+    animation: swingLogo 3s ease-in-out infinite alternate, changeColor 5s infinite linear;
+}
+
+@keyframes swingLogo {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+  .logo_container {
+    position: fixed;
+    top: -70px;
+    right: 20px;
+  }
+  
+  .text_container {
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.5); /* Couleur du texte avec une opacité de 0.5 */
+}
+  
+/* Ajoute une animation au texte */
+.text_container {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+    animation-name: textAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes textAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .text_container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold; /* ou une valeur numérique comme 600 ou 700 */
+  }
+  
+  .text_container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #383434;
+    font-weight: bold; /* ou une valeur numérique comme 600 ou 700 */
+  }
+  
+  .carts_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cart {
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  
+  .cart_image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .cart_image_1 {
+    background-image: url(../picture/garden.jpg);
+  }
+  
+  .cart_image_2 {
+    background-image: url(../picture/resto.jpg);
+  }
+  
+  .cart_image_3 {
+    background-image: url(../picture/Praha_view.jpg);
+  }
+  
+  .button-animated {
+    margin-top: 20px; /* Ajuste la marge selon tes besoins */
+    position: absolute;
+    margin-left: -45px; /* Ajuste la marge selon tes besoins */
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Ajoute la transition pour une animation fluide */
+  }
+  
+  .button-animated:hover {
+    background-color: #0056b3;
+    animation: pulse 0.5s infinite alternate, rotate 0.5s infinite alternate; /* Ajoute les animations pulse et rotate */
+  }
+  
+  @keyframes pulse {
+    to {
+      transform: scale(1.1); /* Échelle 10% plus grande que la taille originale */
+    }
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(5deg); /* Fait pivoter le bouton de 5 degrés */
+    }
+  }
+  .cart_image {
+    transition: transform 0.3s ease; /* Ajoute une transition fluide */
+  }
+  
+  /* Survol des images pour les agrandir */
+  .cart_image:hover {
+    transform: scale(1.6); /* Agrandit l'image de 10% */
+  }
+  
+
+  .text_container {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+  }
+  
+  /* Ajoute cette règle pour positionner le bouton Login */
+ 
+  .button-animated :hover {
+    background-color: #0056b3;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

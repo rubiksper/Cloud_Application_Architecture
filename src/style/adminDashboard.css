@@ -1,0 +1,140 @@
+.admin-container {
+  width: 90%; /* Utilisation de pourcentage pour s'adapter à la largeur de l'écran */
+  min-width: 1000px; /* Utilisation de min-width pour définir une largeur minimale */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  overflow-x: auto;
+}
+
+/* Utilisation de media queries pour ajuster la taille des éléments en fonction de la taille de l'écran */
+@media screen and (max-width: 768px) {
+  .admin-container {
+    width: 95%; /* Réduire la largeur du conteneur sur les petits écrans */
+    min-width: auto; /* Supprimer la largeur minimale sur les petits écrans */
+  }
+
+  .admin-container table {
+    font-size: 14px; /* Réduire la taille de la police du tableau sur les petits écrans */
+  }
+
+  .admin-container th,
+  .admin-container td {
+    padding: 8px; /* Réduire l'espacement dans les cellules du tableau sur les petits écrans */
+  }
+}
+
+  
+  .admin-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease; /* Effet de fondu à l'entrée */
+  }
+  
+  .admin-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #555;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px; /* Réduire la taille de la police du tableau sur les petits écrans */
+    animation: slideInUp 1s ease; /* Effet de défilement vers le haut */
+  }
+  
+  .admin-container th,
+  .admin-container td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+  }
+  
+  .admin-container th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .admin-container td {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 10px; /* Définissez la largeur maximale des cellules */
+  }
+  
+  .admin-container tr:hover td {
+    background-color: #f1f1f1;
+  }
+  
+  .admin-container button {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .admin-container button:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .admin-container button:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  
+  .admin-container button:focus {
+    outline: none;
+  }
+  
+  /* Effet de fondu */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Effet de défilement vers le haut */
+  @keyframes slideInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .back-to-map-button {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .back-to-map-button:hover {
+    color: #0056b3;
+  }  

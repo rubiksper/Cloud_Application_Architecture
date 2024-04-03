@@ -1,0 +1,581 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cafe Letka",
+        "address": "Letohradská 44, 170 00 Praha 7-Letná",
+        "description": "Cafe Letka is a cozy cafe located in Letná district, offering a relaxed atmosphere and a variety of coffee and pastries."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.425347444099227,
+          50.098175746751615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "artic bakehouse",
+        "address": "Újezd 11, 150 00 Malá Strana",
+        "description": "Artic Bakehouse is a charming bakery situated in Malá Strana, known for its delicious pastries and bread."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.404456240856334,
+          50.080345905691466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kafe & Hrnky",
+        "address": "Nerudova 244 /25, 118 00 Malá Strana",
+        "description": "Kafe & Hrnky is a quaint cafe located in Malá Strana, serving a selection of coffee and homemade cakes."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.399059421926786,
+          50.08844250382944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Café Savoy",
+        "address": "Vítězná 124/5, 150 00 Malá Strana",
+        "description": "Café Savoy is a historic cafe in Malá Strana, known for its elegant ambiance and traditional Czech pastries."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.407288477153703,
+          50.08096597637363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Terasa U Prince",
+        "address": "Hotel U Prince, Staroměstské nám. 29, 110 00 Staré Město",
+        "description": "Terasa U Prince offers a rooftop dining experience with panoramic views of Old Town Prague, located at Hotel U Prince."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.420131884670369,
+          50.086502951452054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manifesto Market Anděl",
+        "address": "Ostrovského 34, 150 00 Praha 5-Anděl",
+        "description": "Manifesto Market Anděl is an open-air food market featuring a variety of vendors offering international cuisine."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.404121796040332,
+          50.069281159000234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Burgerman",
+        "address": "M. Horákové 63, 170 00 Praha 7-Letná",
+        "description": "Burgerman is a popular burger joint located in the vibrant neighborhood of Letná, offering gourmet burgers and sides."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.425310928322865,
+          50.099839283954765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "In August Company",
+        "address": "Dr. Zikmunda Wintra 791/17, 160 00 Praha 6-Bubeneč",
+        "description": "In August Company is a cozy cafe in Bubeneč, known for its specialty coffee and homemade pastries."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.402523231660185,
+          50.10122780568785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pizza Nuova",
+        "address": "Revoluční 655/1, 110 00 Staré Město",
+        "description": "Pizza Nuova offers authentic Italian pizza in the heart of Old Town Prague, with a cozy atmosphere and friendly service."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.427814884631642,
+          50.08942802586642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "the italians wine food",
+        "address": "Strakonická 948/1, 150 00 Praha 5-Smíchov",
+        "description": "The Italians Wine Food is a trattoria in Smíchov offering a selection of Italian dishes and wines in a casual setting."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.410277777777779,
+          50.0630556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sodo",
+        "address": "Wuchterlova 1, 160 00 Praha 6-Dejvice",
+        "description": "Sodo is a modern Italian restaurant located in Dejvice, offering a menu inspired by traditional Italian cuisine."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.397610833333333,
+          50.0974583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Krystal Bistro",
+        "address": "Sokolovská 101, 186 00 Praha 8-Karlín",
+        "description": "Krystal Bistro is a chic bistro in Karlín, serving French-inspired cuisine with a modern twist."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.453232210112752,
+          50.09464952189371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PIPCA",
+        "address": "28 533, M. Horákové, Holešovice, 170 00 Praha 7",
+        "description": "PIPCA is a cozy cafe located in Holešovice, known for its specialty coffee and homemade cakes."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4292694,
+          50.0996439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PAPRIKA",
+        "address": "Paprika, Dukelských hrdinů 48, 170 00 Capitale de Prague, Tchéquie",
+        "description": "PAPRIKA is a vibrant restaurant located in the heart of Prague, offering a diverse menu of international cuisine."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4326424,
+          50.1029095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bruxx",
+        "address": "Náměstí Míru 9, 120 00 Praha 2-Vinohrady",
+        "description": "Bruxx is a Belgian-inspired brasserie situated in Vinohrady, offering a selection of Belgian beers and traditional dishes."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4380494,
+          50.0754744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aromi",
+        "address": "Náměstí Míru 1234/6, 120 00 Vinohrady",
+        "description": "Aromi is an authentic Italian restaurant located in Vinohrady, serving classic Italian dishes in a cozy atmosphere."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4363484,
+          50.0762077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vinohradský Parlament Restaurant",
+        "address": "Korunní 1, 120 00 Vinohrady",
+        "description": "Vinohradský Parlament Restaurant is a popular dining spot in Vinohrady, offering a diverse menu of Czech and international cuisine."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4383817,
+          50.0754539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grosseto Vinohrady",
+        "address": "Francouzská 79/2, 120 00 Praha 2-Vinohrady",
+        "description": "Grosseto Vinohrady is an Italian restaurant in Vinohrady known for its delicious pasta dishes and cozy ambiance."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4373958,
+          50.074655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Restaurace U Mlynáře",
+        "address": "Nerudova 213/18, 118 00 Malá Strana",
+        "description": "Restaurace U Mlynáře is a traditional Czech restaurant located in Malá Strana, offering hearty Czech dishes in a historic setting."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4008423,
+          50.0886281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Želivárna",
+        "address": "Vinohradská 2396, 130 52 Praha 3-Vinohrady",
+        "description": "Želivárna is a popular cafe and bar located in Vinohrady, offering a selection of drinks and light snacks."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4725612,
+          50.0780775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bageterie Boulevard",
+        "address": "Francouzská 80, 120 00 Praha 2-Vinohrady",
+        "description": "Bageterie Boulevard is a chain of sandwich shops offering a variety of freshly made baguettes and salads."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.438131,
+          50.0743495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dim Sum Spot Letná",
+        "address": "M. Horákové 806/29, 170 00 Praha 7-Holešovice",
+        "description": "Dim Sum Spot Letná is a Chinese restaurant in Holešovice offering a variety of dim sum dishes and other Chinese specialties."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.429077826405067,
+          50.099431574250374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lasagneria",
+        "address": "Korunní 35, 120 00 Vinohrady",
+        "description": "Lasagneria is an Italian restaurant in Vinohrady specializing in homemade lasagna dishes, served in a cozy setting."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4434596,
+          50.0754573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ANAN - Asian Restaurant",
+        "address": "Vinohradská 1595/31, Vinohrady 2, 120 00 Praha 2",
+        "description": "ANAN is an Asian restaurant in Vinohrady offering a variety of Asian dishes in a modern and stylish setting."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.437302621351467,
+          50.07805431233973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stazione Felicita",
+        "address": "Kolbenova 931, 190 00 Praha 9-Vysočany",
+        "description": "Stazione Felicita is a cozy Italian restaurant located in Vysočany, offering a variety of pasta and pizza dishes."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.515992385382367,
+          50.11046094334364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marthy's Kitchen",
+        "address": "Francouzská 13, 120 00 Praha 2-Vinohrady",
+        "description": "Marthy's Kitchen is a cozy restaurant in Vinohrady serving a variety of international dishes with a focus on fresh, local ingredients."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.439670288666441,
+          50.07406893716338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KRUSTA řemeslná pekárna & bistro",
+        "address": "Vodičkova 11, 110 00 Nové Město",
+        "description": "KRUSTA is a bakery and bistro in Nové Město known for its artisanal bread and pastries, as well as a selection of savory dishes."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.42296767326291,
+          50.07988914062177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pizzeria Da Pietro Praha",
+        "address": "Bělehradská 573/61, 120 00 Vinohrady",
+        "description": "Pizzeria Da Pietro Praha is an Italian restaurant in Vinohrady known for its delicious wood-fired pizzas and cozy atmosphere."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.43295911705711,
+          50.072570540612595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bystro Cafe",
+        "address": "K Rotundě 3, 128 00 Praha 2-Vyšehrad",
+        "description": "Bystro Cafe is a cozy cafe located near Vyšehrad, offering a selection of coffee, tea, and light snacks."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.421115771396565,
+          50.06409590211953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Old Prague Trdelník I.",
+        "address": "Karlova 187/6, 110 00 Josefov",
+        "description": "Old Prague Trdelník I. is a popular spot in Josefov known for its delicious trdelník pastries, a traditional Czech treat."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.416523528912151,
+          50.0861653524556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Modrý zub",
+        "address": "Jindřišská 5, 110 00 Nové Město",
+        "description": "Modrý zub is a cozy bistro in Nové Město known for its delicious burgers and relaxed atmosphere."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.427017639310515,
+          50.083185957225886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maitrea restaurace",
+        "address": "Týnská ulička 1064/6, 110 00 Staré Město",
+        "description": "Maitrea is a vegetarian restaurant located in the heart of Old Town Prague, offering a variety of vegetarian and vegan dishes."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.422512489398372,
+          50.08842568858716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dim Sum Spot Palackého",
+        "address": "Palackého 110 00/717/11, 1 Nové Město",
+        "description": "Dim Sum Spot Palackého is a Chinese restaurant in Nové Město offering a variety of dim sum dishes and other Chinese specialties."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.423673761551855,
+          50.08094921610645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IDIOM",
+        "address": "Idiom Installation, Josefov, 110 00 Praha 1",
+        "description": "an infinite tower of books is a nightmare disguised as a dream"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.417347682355544,
+          50.087375250309215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Donuterie",
+        "address": "Náprstkova 215, 110 00 Staré Město",
+        "description": "Discover the charm of this quaint donut shop near Charles Bridge. With a wide array of flavors, it's a culinary adventure not to be missed."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.416100854686592,
+          50.08440676523462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Café Louvre",
+        "address": "Národní 22, 110 00 Nové Město",
+        "description": "The most famous cafe in Praha with french and czech culture"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.418620541104573,
+          50.08206843942808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bagel Lounge Florenc",
+        "address": "Sokolovská 343/21, 186 00 Karlín",
+        "description": "Comfy Café with nice Interieur. Would recomment for chill breakfast or Brunch They Play music that is very pleasant. The Service is also nice????"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.440901263468536,
+          50.09188073034509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Funwari Japanese Pancakes",
+        "address": "Slavíkova 18, 130 00 Praha 3-Žižkov",
+        "description": "Crêpes japonaises dans un patisserie avec une atmosphère très sympa.\n\nCredit: li"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.447644162919582,
+          50.07991998928902
+        ]
+      }
+    }
+  ]
+}
