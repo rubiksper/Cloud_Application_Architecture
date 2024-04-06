@@ -3,12 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rodrigogs/mysql-events": "^0.6.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.3",
+    "buffer": "^6.0.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.0",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "mapbox-gl": "^3.2.0",
+    "mysql": "^2.18.1",
+    "mysql-events": "^0.0.11",
+    "pm2": "^5.3.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.1",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-map-gl": "^7.1.7",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "^5.0.1",
+    "stream-browserify": "^3.0.0",
+    "styled-components": "^6.1.8",
+    "url": "^0.11.3",
+    "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

@@ -1,0 +1,108 @@
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    margin-top: 40px; /* Ajoutez un espace au-dessus de l'icône */
+  }
+  .menu-icon.open .menu-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.open .menu-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open .menu-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+  
+  .menu-line {
+    width: 25px;
+    height: 2.5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .menu-icon.open .menu-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-icon.open .menu-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open .menu-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .menus {
+    top: calc(900% + 2px); /* Positionnez les éléments du menu en dessous de l'icône de burger */
+    left: 5px; /* Positionnez les éléments du menu tout à gauche */    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+    right: 0;
+    background-color: transparent; /* Couleur de fond transparente */
+    width: 2px; /* Largeur du menu */
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateY(-100%);
+    opacity: 0;
+    z-index: 10; /* Assurez-vous que le menu soit au-dessus de la carte */
+  }
+  
+  .desktop-nav.open .menus {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  
+  .menu-items {
+    margin-right: 20px;
+    margin: 8px 0; /* Réduire l'espacement entre les éléments du menu */
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .menu-items a:hover {
+    color: #ff4b2b;
+  }
+
+
+
+.desktop-nav.open .menus {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.menu-items {
+  margin-right: 20px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #ff4b2b;
+}
+
+  

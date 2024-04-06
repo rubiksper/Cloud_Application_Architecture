@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+body {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+
+
+/* styles.css */
+
+.guest-button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.guest-button:hover {
+  background-color: #74f49e;
+  transform: scale(1.05);
+}
+
+
+.user-button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.guest-button {
+  transition: transform 0.3s ease-in-out;
+}
+.user-button {
+  transition: transform 0.3s ease-in-out;
+}
+.user-button:hover{
+  transform: scale(1.2);
+}
+.guest-button:hover {
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInAnimation {
+  animation: fadeIn 1.3s ease-in-out;
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #ffffcc; /* Jaune très pâle */
+  }
+  50% {
+    background-color: #f4cef4; /* Rose très pâle */
+  }
+  100% {
+    background-color: #d797ba;
+  }
+}
+
+body {
+  animation: backgroundAnimation 7s infinite alternate;
+}
+/* Dans votre fichier de style CSS */
+.Overlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-left: -160px; /* Centrer horizontalement */
+}
+
+.Overlay h1 {
+  font-size: 36px; /* Ajustez la taille de la police selon vos préférences */
+  text-align: center;
+  margin-top: 0; /* Supprime la marge par défaut du titre h1 */
+}
+
+.Overlay p {
+  text-align: center;
+  font-size: 18px; /* Ajustez la taille de la police selon vos préférences */
+}
