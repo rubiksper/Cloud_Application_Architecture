@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+Setting Up MySQL Database with phpMyAdmin
+Prerequisites
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    Ensure that you have MySQL installed 
+    Access to phpMyAdmin.
 
-## Available Scripts
+Steps
 
-In the project directory, you can run:
+    Access phpMyAdmin: Open your web browser and navigate to phpMyAdmin by entering the URL provided by your hosting provider, typically in the format http://your_domain/phpmyadmin.
 
-### `npm start`
+    Log in: Log in to phpMyAdmin using your MySQL username and password.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Create a New Database:
+        Click on the "Databases" tab.
+        Enter the desired name "praha-gem" in the "Create database" field.
+        Choose the appropriate collation from the dropdown menu (usually utf8_general_ci).
+        Click on the "Create" button to create the database.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    Create Tables:
+        After creating the database, click on its name in the left sidebar to select it.
+        Navigate to the "SQL" tab.
+        Copy the SQL schema provided below and paste it into the SQL query box.
+        Click on the "Go" button to execute the query and create the necessary tables.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CREATE TABLE IF NOT EXISTS `gem` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Nom` varchar(255) NOT NULL,
+  `Adresse` varchar(255) NOT NULL,
+  `Description` text NOT NULL,
+  `latitude` decimal(10,8) NOT NULL,
+  `longitude` decimal(11,8) NOT NULL,
+  `contributeur` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-### `npm run build`
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` enum('admin','user') NOT NULL DEFAULT 'user',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+CREATE TABLE IF NOT EXISTS `location_proposal` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Nom` varchar(255) NOT NULL,
+  `Adresse` varchar(255) NOT NULL,
+  `Description` text NOT NULL,
+  `latitude` decimal(10,8) NOT NULL,
+  `longitude` decimal(11,8) NOT NULL,
+  `user_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Import Data:Import gem.json data, navigate to the "Import" tab when you are in the gem in phpMyAdmin and follow the instructions to import your data into the respective tables.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Configuration:
+        Update your server-side code (server.js) with the appropriate MySQL connection details, including your host, username, password, and database name.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'your_mysql_username',
+    password: 'your_mysql_password',
+    database: 'your_database_name'
+});
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Start Your Server: After setting up the database, start your Node.js server to establish a connection with the MySQL database and run your application.
