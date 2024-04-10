@@ -2,14 +2,15 @@
 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
-import House from "./House"; 
-import GuestHouse from "./GuestHouse"; 
-import Dashboard from './Dashboard'; 
-import AdminProposal from './AdminProposal';
-import AdminHouse from './AdminHouse'; 
+import Home from "../frontend/Home";
+import SignIn from "../frontend/SignIn";
+import SignUp from "../frontend/SignUp";
+import House from "../frontend/House"; // Importez le composant House
+import GuestHouse from "../frontend/GuestHouse"; // Importez le composant House
+import Dashboard from '../frontend/Dashboard'; // Importez le composant Dashboard
+import AdminProposal from '../frontend/AdminProposal'; // Importez le composant Dashboard
+import GuestProposal from '../frontend/GuestProposal'; // Importez le composant Dashboard
+import AdminHouse from '../frontend/AdminHouse'; // Importez le composant Dashboard
 
 function App() {
   return (
@@ -20,10 +21,10 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/home" element={<House />} />
         <Route path="/guest" element={<GuestHouse />} />
-        <Route path="/dashboard" element={<Dashboard />} /> 
-        <Route path="/GuestProposal" element={<GuestProposal />} /> 
-        <Route path="/AdminProposal" element={<AdminProposal />} /> 
-        <Route path="/AdminHouse" element={<AdminHouse />} /> 
+        <Route path="/dashboard" element={<Dashboard />} /> {/* Nouvelle route pour le dashboard */}
+        <Route path="/GuestProposal" element={<GuestProposal />} /> {/* Nouvelle route pour le dashboard */}
+        <Route path="/AdminProposal" element={<AdminProposal />} /> {/* Nouvelle route pour le dashboard */}
+        <Route path="/AdminHouse" element={<AdminHouse />} /> {/* Nouvelle route pour le dashboard */}
  
       </Routes>
     </Router>

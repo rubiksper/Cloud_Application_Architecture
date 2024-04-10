@@ -55,7 +55,16 @@ CREATE TABLE IF NOT EXISTS `location_proposal` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-    Import Data:Import gem.json data, navigate to the "Import" tab when you are in the gem in phpMyAdmin and follow the instructions to import your data into the respective tables.
+
+
+
+go to your user table in your database and then insert sql request:
+
+INSERT INTO users (name, email, password, role) 
+VALUES ('Admin Name', 'admin@example.com', 'motdepasse', 'admin');
+
+to have an admin account
+
 
     Configuration:
         Update your server-side code (server.js) with the appropriate MySQL connection details, including your host, username, password, and database name.
@@ -68,4 +77,19 @@ const connection = mysql.createConnection({
     database: 'your_database_name'
 });
 
+and also:
+
+// Add an event listener for the gem table
+instance.addTrigger({
+  name: 'monitor_gem_table',
+  expression: 'your_database_name',
+  statement: MySQLEvents.STATEMENTS.ALL,
+  onEvent: (event) => {
+    if (event.type === 'insert' || event.type === 'update' || event.type === 'delete') {
+      console.log('Changes detected in gem table. Restarting server...');
+    }
+  },
+});
+
     Start Your Server: After setting up the database, start your Node.js server to establish a connection with the MySQL database and run your application.
+    And you can add gem.json data on it by running the server.

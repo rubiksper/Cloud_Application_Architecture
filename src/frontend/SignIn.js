@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import * as Components from '../component/Components';
 import { Link } from "react-router-dom";
 import { signIn, signInAsGuest } from '../backend/userService';
-import "../style/log.css"; 
+import "../style/log.css"; // Importez votre fichier de style CSS ici
+
 function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSignIn = async (e) => {
-    e.preventDefault(); // no default page
+    e.preventDefault(); // Empêche le rechargement de la page par défaut
 
     try {
       const { redirectUrl } = await signIn(email, password);
@@ -33,8 +34,10 @@ function SignIn() {
   };
 
   useEffect(() => {
+    // Ajoutez la classe personnalisée au body lorsque le composant est monté
     document.body.classList.add('custom');
 
+    // Supprimez la classe personnalisée du body lorsque le composant est démonté
     return () => {
       document.body.classList.remove('custom');
     };

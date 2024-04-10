@@ -561,21 +561,6 @@
           50.09188073034509
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Funwari Japanese Pancakes",
-        "address": "Slavíkova 18, 130 00 Praha 3-Žižkov",
-        "description": "Crêpes japonaises dans un patisserie avec une atmosphère très sympa.\n\nCredit: li"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.447644162919582,
-          50.07991998928902
-        ]
-      }
     }
   ]
 }

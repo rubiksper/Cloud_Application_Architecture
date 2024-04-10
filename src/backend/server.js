@@ -21,15 +21,50 @@ const connection = mysql.createConnection({
 });
 
 connection.connect((err) => {
-    if (err) {
-        console.error('Error connecting to database:', err);
-        return;
-    }
-    console.log('Connected to MySQL database');
-
-    // Add new database data to the JSON file on server startup
-    addNewDataToJSON();
+  if (err) {
+      console.error('Error connecting to database:', err);
+      return;
+  }
+  console.log('Connected to MySQL database');
+  // Call the function to add gem.json data to the database
+  addGemJsonDataToDatabase();
 });
+
+// Function to add gem.json data to the database if not present
+function addGemJsonDataToDatabase() {
+  gemData.features.forEach(feature => {
+      const name = feature.properties.name;
+
+      // Check if this entry already exists in the database by name
+      const query = 'SELECT * FROM gem WHERE Nom = ?';
+      connection.query(query, [name], (error, results) => {
+          if (error) {
+              console.error('Error checking data in database:', error);
+              return;
+          }
+          if (results.length === 0) {
+              // If not present, add this entry to the database
+              const address = feature.properties.address;
+              const description = feature.properties.description;
+              const latitude = feature.geometry.coordinates[1];
+              const longitude = feature.geometry.coordinates[0];
+
+              const insertQuery = 'INSERT INTO gem (Nom, Adresse, Description, latitude, longitude) VALUES (?, ?, ?, ?, ?)';
+              connection.query(insertQuery, [name, address, description, latitude, longitude], (insertError, insertResults) => {
+                  if (insertError) {
+                      console.error('Error adding data to database:', insertError);
+                  } else {
+                      console.log('Data added to database:', name);
+                      // After adding data to the database, update gem.json file
+                      addNewDataToJSON();
+                  }
+              });
+          }
+      });
+  });
+}
+
+// Function to update gem.json file with new database data
 function addNewDataToJSON() {
   const query = 'SELECT * FROM gem';
   connection.query(query, (error, results) => {
@@ -87,6 +122,7 @@ function addNewDataToJSON() {
       }
   });
 }
+
 
 
 // Create a MySQLEvents instance
