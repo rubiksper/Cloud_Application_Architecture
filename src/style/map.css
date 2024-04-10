@@ -8,7 +8,7 @@
   
   .menu-icon {
     cursor: pointer;
-    margin-top: 40px; /
+    margin-top: 40px; 
   }
   .menu-icon.open .menu-line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
@@ -52,10 +52,10 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 50px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+    top: 50px;
     right: 0;
-    background-color: transparent; /* Couleur de fond transparente */
-    width: 2px; /* Largeur du menu */
+    background-color: transparent; 
+    width: 2px; 
     transition: transform 0.3s, opacity 0.3s;
     transform: translateY(-100%);
     opacity: 0;
@@ -70,7 +70,7 @@
   
   .menu-items {
     margin-right: 20px;
-    margin: 8px 0; /
+    margin: 8px 0; 
   }
   
   .menu-items a {
