@@ -8,7 +8,7 @@
   
   .menu-icon {
     cursor: pointer;
-    margin-top: 40px; /* Ajoutez un espace au-dessus de l'icône */
+    margin-top: 40px; /
   }
   .menu-icon.open .menu-line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
@@ -44,8 +44,9 @@
   }
   
   .menus {
-    top: calc(900% + 2px); /* Positionnez les éléments du menu en dessous de l'icône de burger */
-    left: 5px; /* Positionnez les éléments du menu tout à gauche */    display: flex;
+    top: calc(900% + 2px); 
+    left: 5px; 
+    display: flex;
     flex-direction: column;
     list-style-type: none;
     margin: 0;
@@ -58,7 +59,7 @@
     transition: transform 0.3s, opacity 0.3s;
     transform: translateY(-100%);
     opacity: 0;
-    z-index: 10; /* Assurez-vous que le menu soit au-dessus de la carte */
+    z-index: 10;
   }
   
   .desktop-nav.open .menus {
@@ -69,7 +70,7 @@
   
   .menu-items {
     margin-right: 20px;
-    margin: 8px 0; /* Réduire l'espacement entre les éléments du menu */
+    margin: 8px 0; /
   }
   
   .menu-items a {

@@ -83,10 +83,10 @@ body {
 }
 @keyframes backgroundAnimation {
   0% {
-    background-color: #ffffcc; /* Jaune très pâle */
+    background-color: #ffffcc; 
   }
   50% {
-    background-color: #f4cef4; /* Rose très pâle */
+    background-color: #f4cef4; 
   }
   100% {
     background-color: #d797ba;
@@ -96,7 +96,7 @@ body {
 body {
   animation: backgroundAnimation 7s infinite alternate;
 }
-/* Dans votre fichier de style CSS */
+
 .Overlay {
   position: relative;
   display: flex;
@@ -104,16 +104,16 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-left: -160px; /* Centrer horizontalement */
+  margin-left: -160px; 
 }
 
 .Overlay h1 {
-  font-size: 36px; /* Ajustez la taille de la police selon vos préférences */
+  font-size: 36px; 
   text-align: center;
-  margin-top: 0; /* Supprime la marge par défaut du titre h1 */
+  margin-top: 0;
 }
 
 .Overlay p {
   text-align: center;
-  font-size: 18px; /* Ajustez la taille de la police selon vos préférences */
+  font-size: 18px; 
 }

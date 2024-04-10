@@ -1,6 +1,6 @@
 .admin-container {
-  width: 90%; /* Utilisation de pourcentage pour s'adapter à la largeur de l'écran */
-  min-width: 1000px; /* Utilisation de min-width pour définir une largeur minimale */
+  width: 90%; 
+  min-width: 1000px;
   margin: 20px auto;
   padding: 20px;
   background-color: #f8f9fa;
@@ -10,20 +10,20 @@
   overflow-x: auto;
 }
 
-/* Utilisation de media queries pour ajuster la taille des éléments en fonction de la taille de l'écran */
+
 @media screen and (max-width: 768px) {
   .admin-container {
-    width: 95%; /* Réduire la largeur du conteneur sur les petits écrans */
-    min-width: auto; /* Supprimer la largeur minimale sur les petits écrans */
+    width: 95%; 
+    min-width: auto; 
   }
 
   .admin-container table {
-    font-size: 14px; /* Réduire la taille de la police du tableau sur les petits écrans */
+    font-size: 14px; 
   }
 
   .admin-container th,
   .admin-container td {
-    padding: 8px; /* Réduire l'espacement dans les cellules du tableau sur les petits écrans */
+    padding: 8px; 
   }
 }
 
@@ -34,7 +34,7 @@
     text-align: center;
     color: #007bff;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease; /* Effet de fondu à l'entrée */
+    animation: fadeIn 1s ease; 
   }
   
   .admin-container h2 {
@@ -48,8 +48,8 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    font-size: 16px; /* Réduire la taille de la police du tableau sur les petits écrans */
-    animation: slideInUp 1s ease; /* Effet de défilement vers le haut */
+    font-size: 16px; 
+    animation: slideInUp 1s ease; 
   }
   
   .admin-container th,
@@ -71,7 +71,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    max-width: 10px; /* Définissez la largeur maximale des cellules */
+    max-width: 10px; 
   }
   
   .admin-container tr:hover td {
@@ -103,7 +103,7 @@
     outline: none;
   }
   
-  /* Effet de fondu */
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -113,7 +113,7 @@
     }
   }
   
-  /* Effet de défilement vers le haut */
+
   @keyframes slideInUp {
     from {
       transform: translateY(50px);

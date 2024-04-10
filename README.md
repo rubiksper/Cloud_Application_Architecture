@@ -58,6 +58,7 @@ CREATE TABLE IF NOT EXISTS `location_proposal` (
 
 
 
+
 go to your user table in your database and then insert sql request:
 
 INSERT INTO users (name, email, password, role) 
@@ -93,3 +94,4 @@ instance.addTrigger({
 
     Start Your Server: After setting up the database, start your Node.js server to establish a connection with the MySQL database and run your application.
     And you can add gem.json data on it by running the server.
+
