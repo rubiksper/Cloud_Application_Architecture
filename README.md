@@ -2,7 +2,7 @@ Setting Up MySQL Database with phpMyAdmin
 Prerequisites
 
     Ensure that you have MySQL installed 
-    Access to phpMyAdmin.
+    Access to phpMyAdmin with default log "root" ans pwd: "".
 
 Steps
 
