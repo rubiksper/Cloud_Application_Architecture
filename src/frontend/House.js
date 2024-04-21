@@ -27,7 +27,7 @@ const Menu = ({ isOpen, toggleMenu, username, handleLogout }) => {
               <a href="/">Home</a>
             </li>
             <li className="menu-items">
-              <a href="/GuestProposal">Proposal</a>
+              <a href="/UserProposal">Proposal</a>
             </li>
           </ul>
         )}
