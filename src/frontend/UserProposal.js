@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { submitLocationProposal } from '../backend/api';
 import '../style/dashboard.css';
 
-function GuestProposal() {
+function UserProposal() {
   const [name, setName] = useState('');
   const [address, setAddress] = useState('');
   const [description, setDescription] = useState('');
@@ -94,4 +94,4 @@ const handleSubmitProposal = async () => {
   );
 }
 
-export default GuestProposal;
+export default UserProposal;
