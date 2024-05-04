@@ -110,3 +110,8 @@ to have an admin account
     Start Your Server: After setting up the database, start your Node.js server to establish a connection with the MySQL database and run your application.
     And you can add gem.json data on it by running the server.
 
+
+
+For the Fontend part just launch it with:
+
+npm start
